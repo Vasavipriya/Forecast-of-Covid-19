@@ -95,21 +95,4 @@ prophet_plot_components(s, forecast)
 
 
 
-#worldwide
-
-df_confirmed = read.csv(file.choose())
-df_confirmed<-df_confirmed%>%rename("Country" = "Country.Region")
-df_recovered = read.csv(file.choose())
-df_recovered<-df_recovered%>%rename("Country" = "Country.Region")
-df_deaths = read.csv(file.choose())
-df_deaths<-df_deaths%>%rename("Country" = "Country.Region")
-
-
-
-
-data_idcor=read_excel(file.choose())
-data_india=read_excel(file.choose(),sheet=1)
-data_italy=read_excel(file.choose(),sheet=2)
-data_wuhan=read_excel(file.choose(),sheet=3)
-data_korea=read_excel(file.choose(),sheet=4)
 
